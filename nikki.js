@@ -394,7 +394,7 @@ function filterTopAccessories(filters) {
 	var totalS = shoppingCart.totalScore.sumScore;
 	var toSortS = clone(shoppingCart.cart);
     
-    if (uiFilter["acc9"]) return toSortS;
+    if (uiFilter["acc9"]) return [toSortS, toSortS];
 	
 	shoppingCart.clear();
 	shoppingCart.putAll(resultAll);
